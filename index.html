@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    /* -------------------body style------------------------- */
+        body {
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            background-repeat: no-repeat;
+            background-size: 1400px 700px;
+        }
+    /* --------------------------text style----------------------- */
+        .head1 {
+            font-family: sans-serif;
+            
+            
+            color: white;
+        }
+
+        h1 {
+            font-size: 500%;
+        }
+        h2{
+            font-size:300%;
+        }
+    /* ----------------------clock style-------------------------------- */
+        .head2 {
+            /* border: 2px solid red; */
+            
+            height: 70vh;
+            width: 70vh;
+            border-radius: 52%;
+            margin-top: 5%;
+            margin-left: 10%;
+            background: url(clock.png) no-repeat;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+        }
+        /* ---------------------------hour hand -----------------------*/
+        #hhand {
+            position: absolute;
+            height: 25%;
+            width:2%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            
+            background: black;
+            top: 25%;
+            left: 49.5%;
+            transform: rotate(270deg);
+            transform-origin: bottom;
+            
+        }
+        /* ---------------------------minute hand -----------------------*/
+        #mhand {
+            position: absolute;
+            height: 32%;
+            width:1.3%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background: black;
+            top: 18%;
+            left: 49.5%;
+            transform: rotate(90deg);
+            transform-origin: bottom;
+        }
+        /* ---------------------------second hand -----------------------*/
+        #shand {
+            position: absolute;
+            height: 35%;
+            width:0.5%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background: black;
+            top: 15%;
+            left: 50%;
+            transform: rotate(180deg);
+            transform-origin: bottom;
+        }
+        /* ---------------------media queries-------------------------- */
+        @media screen and (max-width:800px) {
+
+            .head1 {
+                margin-top: 1%;
+
+            }
+            h1{
+                font-size:350%;
+                font-weight:bold;
+            }
+            h2{
+                font-size:250%;
+                font-weight:bold;
+            }
+            
+            .head2{
+                margin-top: 5%;
+                width: 40vh;
+                height:40vh;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .circle{
+                margin-left: 41%;
+                margin-top:20%;
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 head2">
+                <!-- <img src="clock.png" alt="" class="clc"> -->
+                <div class="circle"></div>
+                <!-- <img src="hour hand.png" alt="" class="hhand"> -->
+                <!-- <img src="hand.png" alt="" class="mhand"> -->
+                <!-- <img src="" alt=""> -->
+                <div id="hhand"></div>
+                <div id="mhand"></div>
+                <div id="shand"></div>
+            </div>
+            <div class="col-sm-6 head1">
+                <h1>ANALOG CLOCK</h1>
+                <h2>HTML | CSS | JAVASCRIPT</h2>
+                <h3>Do you want to make clock like this?</h3>
+                
+                <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="myForm" action="https://formspree.io/f/xjvjvakg" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="email" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="number" id="number" name="number" class="form-control">
+                            <label for="number" class="">Phone no.</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="address" name="address" class="form-control">
+                            <label for="address" class="">Address</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+      
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ---------------------java script----------------------- -->
+<script>
+    setInterval(() => {
+    d = new Date();
+    htime = d.getHours();
+    mtime = d.getMinutes();
+    stime = d.getSeconds();
+    hrotation = 30*htime + mtime/2;
+    mrotation = 6*mtime;
+    srotation = 6*stime;
+
+    // document.getElementById('date').innerHTML=d;
+
+    hhand.style.transform = `rotate(${hrotation}deg)`;
+    mhand.style.transform = `rotate(${mrotation}deg)`;
+    shand.style.transform = `rotate(${srotation}deg)`;
+}, 1000);
+</script>
+</body>
+
+</html>
